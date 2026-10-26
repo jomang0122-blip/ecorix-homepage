@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>에코릭스 ECORIX</title>
-<meta name="description" content="대기환경 설비의 설계·시공부터 컨설팅·유지보수까지 함께하는 환경엔지니어링 회사">
+<meta name="description" content="대기환경 설비의 설계·시공·컨설팅부터 운전 데이터 분석·유지보수까지 함께하는 환경엔지니어링 회사">
 <meta property="og:title" content="에코릭스 ECORIX">
-<meta property="og:description" content="대기환경 설비의 설계·시공부터 컨설팅·유지보수까지 함께하는 환경엔지니어링 회사">
+<meta property="og:description" content="대기환경 설비의 설계·시공·컨설팅부터 운전 데이터 분석·유지보수까지 함께하는 환경엔지니어링 회사">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.ecorix.co.kr/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  /* v2 초안 (2026-10-26): 한글 상호 크게, 사업 분야는 크게(설계 시공 컨설팅 유지보수), 준비중 표시 유지 */
+  /* v3 (2026-10-26): 화면 가운데 배치, 운전 데이터 분석 추가. v2: 한글 상호 크게, 사업 분야 크게, 준비중 표시 유지 */
   :root {
     --main: #1C8CF2;   /* 주조색 (CI 확정) */
     --sub: #27AE60;    /* 보조색 에코그린 (CI 확정) */
@@ -26,13 +26,15 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     min-height: 100vh;
-    padding: 64px 16px 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 16px 28px;
     background: linear-gradient(180deg, #fff 0%, var(--tint) 100%);
     color: var(--txt);
     font-family: 'Noto Sans KR', -apple-system, 'Malgun Gothic', sans-serif;
     word-break: keep-all;
   }
-  main { width: 100%; max-width: 720px; margin: 0 auto; }
+  main { width: 100%; max-width: 760px; margin: auto; }   /* 위아래 가운데 */
   .hero { text-align: center; }
   .brand { display: flex; justify-content: center; align-items: baseline; gap: 14px; flex-wrap: wrap; }
   .wordmark { font-size: 40px; font-weight: 700; letter-spacing: 0.08em; color: var(--main); line-height: 1; }
@@ -58,7 +60,7 @@
   .contact a { font-size: 17px; font-weight: 500; color: var(--main); text-decoration: none; }
   .contact a:hover { text-decoration: underline; }
   footer {
-    margin: 64px auto 0; max-width: 720px; padding-top: 18px; border-top: 1px solid var(--line);
+    margin: 56px auto 0; width: 100%; max-width: 720px; padding-top: 18px; border-top: 1px solid var(--line);
     font-size: 12px; line-height: 1.8; color: var(--txt3); text-align: center;
   }
   @media (max-width: 520px) {
@@ -74,12 +76,12 @@
   <section class="hero">
     <div class="brand"><span class="wordmark">ECORIX</span><span class="name-ko">에코릭스</span></div>
     <div class="slogan">환경을 지키는 기술</div>
-    <p class="intro">대기환경 설비의 설계·시공부터<br>컨설팅·유지보수까지 함께하는 환경엔지니어링 회사</p>
+    <p class="intro">대기환경 설비의 설계·시공·컨설팅부터<br>운전 데이터 분석·유지보수까지 함께하는 환경엔지니어링 회사</p>
   </section>
 
   <section class="fields">
     <h2>대기환경 설비</h2>
-    <div class="chips"><span>설계</span><span>시공</span><span>컨설팅</span><span>유지보수</span></div>
+    <div class="chips"><span>설계</span><span>시공</span><span>컨설팅</span><span>운전 데이터 분석</span><span>유지보수</span></div>
   </section>
 
   <div class="notice-wrap"><span class="notice">홈페이지 준비중입니다</span></div>
